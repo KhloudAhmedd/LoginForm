@@ -1,0 +1,137 @@
+* {
+    /* needed a space between 'remember' and 'forget' */
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* couldn't use the img in folder so used it from the internet */
+    background: url("https://wallpapers.com/images/high/hawaii-sunset-full-4k-0k0ejx7ba7wpxqq1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    /* The backdrop-filter CSS property lets you apply blurring or color shifting to the area behind an element */
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+.inputbox {
+    width: 300px;
+    margin: 35px 0;
+    position: relative;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+input:focus~label {
+    top: -5px;
+}
+
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    color: #fff;
+    padding: 0 35px 0 5px;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    color: #fff;
+}
+
+.user {
+    display: flex;
+    margin: 10px 0 15px;
+    font-size: 18px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.user label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
